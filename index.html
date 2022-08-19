@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body style="text-align: center;">
+    <form>
+
+        <h1>Sistema de Login(Teste)</h1>
+        <input type="text" placeholder="Username" id="IdUser">
+    <br><input type="password" placeholder="Password" id="IdPass">
+    <br><input type="submit" onclick="login()">
+
+
+
+    </form>
+
+    
+    <script>
+        function login(){
+            var username = document.getElementById('IdUser').value
+            var password = document.getElementById('IdPass').value
+            var trueuser = "sistema"
+            var truepass = "123456"
+            if(trueuser === username && truepass === password){
+                window.alert('Usuário logado com sucesso!')
+            }else{
+                window.alert('[ERROR] Usuário ou senha incorretos!')
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
